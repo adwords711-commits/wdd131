@@ -1,0 +1,48 @@
+body {
+    background-color: #ffffff;
+    font-family: Georgia, serif;
+}
+#content {
+    background-color: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 60px;
+    border: 1px solid #ccc;
+}
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    font-weight: normal;
+}
+h2 {
+    content: "";
+    color: #005da6;
+    font-size: small;
+    margin-top: 10px;
+}
+p {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+ol {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+img {
+    display: block;
+    margin: 30px auto 0;
+    max-width: 160px;
+}
+h2.underline {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    display: block;
+    position: relative;
+}   
