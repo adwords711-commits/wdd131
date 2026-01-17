@@ -8,10 +8,18 @@
 
     <title>Mission Statement Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="content">
         <h1>Mission Statement</h1>
+
+        <select id="theme-select">
+            <option value="">Choose Mode</option>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
+
         <h2 class="underline">Brigham Young Universkty-Idaho</h2>
 
         <p>
@@ -36,7 +44,7 @@
             </li>
         </ol>   
         
-        <img src="images/byui-logo.png" alt="BYU-Idaho logo">
+        <img id="logo" src="images/byui-logo.png" alt="BYU-Idaho logo">
     </div>
 </body>
 </html>
