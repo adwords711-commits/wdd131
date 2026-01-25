@@ -24,7 +24,7 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
-nav a {
+.main-nav a {
     padding: 20px;
     color: black;
     display: none;
@@ -47,22 +47,39 @@ nav a:hover {
 footer {
     text-align: center;
 }
+.main-nav a {
+    padding: 20px;
+    color: black;
+    display: none;
+}
 
-@media screen and (min-width: 700px) {
+/* MOBILE + TABLET */
+.main-nav ul {
+    display: none;
+}
+
+/* TABLET */
+@media screen and (min-width: 700px) and (max-width: 999px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .menu-btn {
-        display: none;
-    }
-    nav a {
-        display: inline;
+        display: block;
     }
 }
+
+/* DESKTOP */
 @media screen and (min-width: 1000px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .main-nav ul {
+        display: flex;
+        gap: 20px;
     }
 }

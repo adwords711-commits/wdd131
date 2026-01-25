@@ -1,0 +1,148 @@
+/* --------------------------*/
+/*          GLOBAL           */
+/*---------------------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------*/
+/*       TAG SELECTORS       */
+/*---------------------------*/
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* --------------------------*/
+/*     CLASS SELECTORS       */
+/*---------------------------*/
+
+.main-nav {
+    background-color: transparent;
+    padding: 10px;
+}
+.menu-btn {
+    display: block;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+/* --------------------------*/
+/*          HEADER           */
+/*---------------------------*/
+
+header {
+    background-color: #2a6fdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+/* --------------------------*/
+/*   DESENDANT SELECTORS     */
+/*---------------------------*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+.brand h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+/* --------------------------*/
+/*     GROUP SELECTORS       */
+/*---------------------------*/
+h2, p, li {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+/* --------------------------*/
+/*     PSEUDO-CLASS SELECTORS */
+/*---------------------------*/
+
+nav a:hover {
+  color: #ffcc00;
+}
+/* --------------------------*/
+/*       GALLERY.            */
+/*---------------------------*/
+
+.gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+.gallery h2 {
+    width: 100%;
+    text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+}
+/* --------------------------*/
+/*          FOOTER           */
+/*---------------------------*/
+footer {
+    background-color: #2a6fdb;   /* same blue color */
+    text-align: center;          /* center the text */
+    padding: 10px 0;             /* add spacing */
+}
+footer p {
+    color: white;
+}
+
+
+@media screen and (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menu-btn {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+}
