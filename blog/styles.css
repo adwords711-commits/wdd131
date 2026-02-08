@@ -19,8 +19,8 @@ header h1 {
 }
 /*navigation*/
 nav[aria-label="Main navigation"] {
-    border-top: 2px solid#e0c6a0;
-    border-bottom: 2px solid#e0c6a0;
+    border-top: 2px solid #e0c6a0;
+    border-bottom: 2px solid #e0c6a0;
     padding: 10px 2rem;
 }
 
