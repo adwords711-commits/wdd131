@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Form</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="form.css">
     <script src="form.js" defer></script>
 </head>
 <body>
   <main>
-    <section class="errors"></section>
+    <div class="errors"></div>
 
     <form id="checkoutForm" action="completed.html" method="get">
       <div id="formGrid">
         
-        <div class="card front" role="region" aria-labelledby="creditCardLabel">
+        <div class="card front">
           <div class="total">TOTAL: $199</div>
           <div class="card-icon">💳</div>
 
@@ -27,7 +27,7 @@
               name="creditCardNumber" 
               placeholder="1234 5678 9101 1020" 
               required 
-            />
+            >
           </div>
 
           <div class="field card-holder">
@@ -38,7 +38,7 @@
               name="cardHolder" 
               placeholder="John Doe" 
               required 
-            />
+            >
           </div>
 
           <div class="field expiration" id="cardExpiration">
@@ -51,7 +51,7 @@
               placeholder="MM" 
               aria-labelledby="expirationDate" 
               required 
-            />
+            >
             <input 
               type="text" 
               id="year" 
@@ -59,7 +59,7 @@
               placeholder="YY" 
               aria-labelledby="expirationDate" 
               required 
-            />
+            >
           </div>
         </div>
         
@@ -74,7 +74,7 @@
               placeholder="xxx" 
               maxlength="3" 
               required 
-            />
+            >
           </div>
         </div>
         

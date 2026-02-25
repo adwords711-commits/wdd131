@@ -90,7 +90,7 @@
 .cvc {
   grid-column: 2 / 3;
   grid-row: 3 / 3;
-  align-self: top;
+  align-self: start;
   margin-right: 10px;
   margin-left: 40px;
 }
