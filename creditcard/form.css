@@ -1,0 +1,126 @@
+/* FORM GRID*/
+#formGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+
+  width: 600px;
+  margin: 80px auto;
+  position: relative;
+}
+
+/* FRONT CARD GRID*/
+
+.card.front {
+  /* Position inside FORM GRID */
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background: lightgrey;
+  border-radius: 14px;
+  padding: 25px;
+  /* This is GRID #2 */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px;
+  z-index: 2;
+  box-shadow: 0 5px 10px gray;
+}
+
+/* Front Card Internal Placement */
+
+.total {
+  grid-column: 1 / 2;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-icon {
+  grid-column: 2 / 3;
+  text-align: right;
+  font-size: 2.8rem;
+}
+
+.card-number {
+  grid-column: 1 / 2;
+  margin-right: 28px;
+}
+
+.card-holder {
+  grid-column: 1 / 2;
+  gap: 8px;
+  margin-right: 28px;
+}
+
+.expiration {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px
+}
+
+/* BACK CARD GRID*/
+
+.card.back {
+  /* Position inside FORM GRID */
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  background: #e3e3e3;
+  border-radius: 14px;
+  padding: 25px;
+  /* This is GRID #3 */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  gap: 0px;
+
+  z-index: 1;
+  box-shadow: 0 5px 10px gray;
+}
+/* Back Card Internal Placement */
+.swipe {
+  grid-column: 1 / -1;   
+  height: 40px;
+  background: black;
+  margin-left: -25px;
+  margin-right: -25px;
+  border-radius: 0; 
+}
+.cvc {
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+  align-self: top;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+/* SUBMIT BUTTON */
+
+button[type="submit"] {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #e9e7e7;
+  border: 2px solid gray;
+  box-shadow: 0 5px 10px gray;
+  cursor: pointer;
+  margin: 12px 0;
+  font-size: 0.9rem;
+}
+
+/* INPUT STYLING */
+
+input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 4px;
+}
