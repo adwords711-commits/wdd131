@@ -43,7 +43,7 @@
     position: absolute;
     right: 5px;
     top: 15%;
-    transform: translate(-10%);
+    transform: translateY(-10%);
     width: 30px;
 }
 h1, h2 {
@@ -64,7 +64,7 @@ h2 {
     position: absolute;
     right: 45px;
     top: 15%;
-    transform: translate(-10%);
+    transform: translateY(-10%);
     height: 30px;
     width: 1px;
     font-size: 30px;
@@ -90,7 +90,6 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
-    padding: 1rem;
     font-size: 18px;
     font-family: Arial, sans-serif;
 }
@@ -113,7 +112,6 @@ img {
 }
 
 footer .social {
-    display: flex;
     display: flex;
     gap: 1rem;
     justify-content: center;
