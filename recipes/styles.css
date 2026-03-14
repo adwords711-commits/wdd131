@@ -42,8 +42,8 @@
 .search-icon {
     position: absolute;
     right: 5px;
-    top: 15%;
-    transform: translateY(-10%);
+    top: 45%;
+    transform: translate(-10%);
     width: 30px;
 }
 h1, h2 {
@@ -63,8 +63,8 @@ h2 {
     content: "";
     position: absolute;
     right: 45px;
-    top: 15%;
-    transform: translateY(-10%);
+    top: 45%;
+    transform: translate(-10%);
     height: 30px;
     width: 1px;
     font-size: 30px;
