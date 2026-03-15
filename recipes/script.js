@@ -296,22 +296,6 @@ searchButton.addEventListener('click', function(){
     renderRecipes(sortedRecipes);
 })
 
-/*searchInput.addEventListener('input', function(){
-    const query = searchInput.value.toLowerCase();
-    const filteredRecipes = recipes.filter(function(recipe) {
-        return (
-            recipe.name.toLowerCase().includes(query) ||
-            recipe.description.toLowerCase().includes(query) ||
-            recipe.tags.some(tag => tag.toLowerCase().includes(query))
-        );
-    });
-    const sortedRecipes = filteredRecipes.sort(function(a, b) {
-    return a.name.localeCompare(b.name);
-    });
-
-    renderRecipes(sortedRecipes);
-});*/
-
 function recipeTemplate(recipe) {
   return `
     <section class="recipe-card">
@@ -341,7 +325,7 @@ function renderRecipes(recipeList) {
 
 function showRandomRecipe() {
     const randomIndex = Math.floor(Math.random() * recipes.length);
-    const rendomRecipe = recipes[randomIndex];
+    const randomRecipe = recipes[randomIndex];
     renderRecipes([RandomRecipe]);
 }
 renderRecipes(recipes);
