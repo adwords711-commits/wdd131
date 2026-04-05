@@ -74,7 +74,7 @@
                 </p>
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" id="mail" name="email" placeholder="name@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
                 </p>
                 <p>
                     <label for="msg">Message:</label>
@@ -84,7 +84,17 @@
                 <button type="submit">Send your message</button>
                 </p>
                 </form>
-            </section>        
+            </section>
+            <script>
+                const form = document.querySelector('.contact-form-1 form');
+                const feedback = document.getElementById('feedback');
+
+                form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                feedback.textContent = "Thank you! Your message has been sent.";
+                form.reset(); // clear all fields
+                });
+                </script>        
         </main>
         
         
