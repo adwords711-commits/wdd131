@@ -7,7 +7,7 @@ const services = [
     category: ["Cut"],
     description: "Professional women's haircut tailored to your style.",
     duration: "45 min",
-    image: "./images/untitled.png",
+    image: "./images/untitled.jpg",
     rating: 5,
     price: { short: 45, mid: 60, long: 75 }
   },
@@ -16,7 +16,7 @@ const services = [
     category: ["Curly"],
     description: "Designed for curly and natural curly hair.",
     duration: "120 min",
-    image: "./images/Untitled-7.png",
+    image: "./images/Untitled-7.jpg",
     rating: 5,
     price: { short: 65, mid: 95, long: 125 }
   },
@@ -25,7 +25,7 @@ const services = [
     category: ["Cut"],
     description: "Clean and modern men's haircut.",
     duration: "30 min",
-    image: "./images/Untitled-5.png",
+    image: "./images/Untitled-5.jpg",
     rating: 4,
     price: { short: 25, mid: 40, long: 55 }
   },
@@ -34,7 +34,7 @@ const services = [
     category: ["Curly"],
     description: "Men's curly haircut tailored to your style.",
     duration: "45 min",
-    image: "./images/Untitled-4.png",
+    image: "./images/Untitled-4.jpg",
     rating: 5,
     price: { short: 65, mid: 85, long: 105 }
   },
@@ -43,7 +43,7 @@ const services = [
     category: ["Color"],
     description: "Full hair coloring with professional products.",
     duration: "1.5 hr",
-    image: "./images/Untitled-3.png",
+    image: "./images/Untitled-3.jpg",
     rating: 5,
     price: { short: 80, mid: 95, long: 110 }
   },
@@ -52,7 +52,7 @@ const services = [
     category: ["Color"],
     description: "Natural-looking highlights with the balayage technique.",
     duration: "2 hr",
-    image: "./images/untitled-8.png",
+    image: "./images/Untitled-8.jpg",
     rating: 5,
     price: { short: 150, mid: 225, long: 350 }
   },
@@ -61,7 +61,7 @@ const services = [
     category: ["Treatment"],
     description: "Smooth and frizz-free hair with professional keratin treatment.",
     duration: "3.5 hr",
-    image: "./images/hero-image.png",
+    image: "./images/hero-image.jpg",
     rating: 5,
     price: { short: 150, mid: 170, long: 190 }
   }
