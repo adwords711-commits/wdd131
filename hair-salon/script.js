@@ -7,7 +7,7 @@ const services = [
     category: ["Cut"],
     description: "Professional women's haircut tailored to your style.",
     duration: "45 min",
-    image: "./images/untitled.jpg",
+    image: "./images/Untitled.jpg",
     rating: 5,
     price: { short: 45, mid: 60, long: 75 }
   },
